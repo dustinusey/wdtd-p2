@@ -1,0 +1,16 @@
+main .contact {
+    background: rgba(#eee, 0.5);
+    padding: .75rem;
+    p {
+        text-align: center;
+        &:first-of-type {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto 3rem auto;
+        }
+        &:last-of-type {
+            margin-top: .7rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

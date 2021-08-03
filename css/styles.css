@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Style+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #32373f;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #17191d;
+}
+
+h1 {
+  font-family: "Style Script", cursive;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2.5rem auto;
+  color: black;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #36b3d3;
+}
+a:visited {
+  color: #36b3d3;
+}
+a:hover {
+  color: #68c6de;
+}
+
+span.colorize {
+  color: #36b3d3;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: margin 0.5s;
+}
+span.colorize:hover {
+  margin-right: 1rem;
+}
+
+header {
+  background: #eee;
+  padding: 1rem 0.5rem;
+}
+header .name-and-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header .name-and-nav h1 {
+  margin-bottom: 1rem;
+}
+header .name-and-nav nav {
+  width: 100%;
+}
+header .name-and-nav nav li {
+  margin-bottom: 2px;
+}
+header .name-and-nav nav li:last-child {
+  margin-bottom: 0;
+}
+header .name-and-nav nav li a {
+  text-align: center;
+  display: block;
+  padding: 0.85rem 0.33rem;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.5);
+  color: #32373f;
+}
+header .name-and-nav nav li a:hover {
+  background: white;
+  color: #36b3d3;
+}
+@media (min-width: 768px) {
+  header .name-and-nav nav {
+    text-align: center;
+  }
+  header .name-and-nav nav ul li {
+    display: inline;
+    margin: 0 5px 0 0;
+  }
+  header .name-and-nav nav ul li:last-child {
+    margin-right: 0;
+  }
+  header .name-and-nav nav li a {
+    display: inline;
+    background: transparent;
+    color: #32373f;
+  }
+  header .name-and-nav nav li a:hover {
+    color: #36b3d3;
+    background: transparent;
+  }
+}
+@media (min-width: 1024px) {
+  header .name-and-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .name-and-nav h1 {
+    margin: 0;
+  }
+  header .name-and-nav nav {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    background: rgba(238, 238, 238, 0.5);
+  }
+}
+
+header .personal-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header .personal-info p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  header .personal-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.33rem;
+    margin-top: 1rem;
+  }
+  header .personal-info img {
+    order: 1;
+    margin-left: 1rem;
+  }
+  header .personal-info p {
+    order: 0;
+    width: 100%;
+    max-width: 550px;
+    text-align: left;
+  }
+}
+
+main .portfolio {
+  padding: 0.75rem;
+}
+main .portfolio .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+}
+main .portfolio .card-container .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+main .portfolio .card-container .card h3 {
+  margin: 0.75rem auto;
+  color: black;
+}
+main .portfolio .card-container .card p {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  main .portfolio .card-container .card {
+    width: 45%;
+    margin: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .portfolio .card-container .card {
+    width: 30%;
+  }
+}
+
+main .interests {
+  padding: 0.75rem;
+}
+main .interests .interest-point {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  main .interests .interest-point {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+main .interests .interest-point .icon {
+  border-radius: 50%;
+  padding: 1rem;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: #36b3d3;
+  margin-bottom: 0.55rem;
+}
+@media (min-width: 768px) {
+  main .interests .interest-point .icon {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
+
+main .contact {
+  background: rgba(238, 238, 238, 0.5);
+  padding: 0.75rem;
+}
+main .contact p {
+  text-align: center;
+}
+main .contact p:first-of-type {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto 3rem auto;
+}
+main .contact p:last-of-type {
+  margin-top: 0.7rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  background: rgba(238, 238, 238, 0.5);
+  padding: 0 0.75rem 2rem;
+}
+footer .name-nav-btt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #cccccc;
+  padding: 1rem 0;
+}
+footer nav {
+  display: none;
+}
+footer nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+footer nav li:last-of-type {
+  margin-right: 0;
+}
+footer nav li a {
+  transition: 0.2s;
+  color: #32373f;
+}
+footer nav li a:visited {
+  color: #32373f;
+}
+footer nav li a:hover {
+  color: #36b3d3;
+}
+@media (min-width: 768px) {
+  footer nav {
+    display: block;
+  }
+  footer a.btt {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+main {
+    .portfolio {
+        padding: .75rem;
+        .card-container {
+            @include flex(row, wrap, space-between, flex-start);
+            width: 100%;
+            text-align: center;
+            .card {
+                @include flex(column, nowrap, flex-start, flex-start);
+                margin-bottom: 1.5rem;
+                h3 {
+                    margin: .75rem auto;
+                    color: black;
+                }
+                p {
+                    margin-bottom: 2rem;
+                    font-size: .9rem;
+                }
+                @media (min-width: 768px) {
+                    width: 45%;
+                    margin: .5rem;
+                }
+                @media (min-width: 1024px) {
+                    width: 30%;
+                }
+            }
+            
+        }
+    }
+}
